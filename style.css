@@ -168,12 +168,13 @@ div.btn a:hover {
 
 .icons {
     display: flex;
-    margin: auto;
+    margin: 0 auto;
     justify-content: center;
     align-content: start;
     width: 80%;
     height: fit-content;
     transition: all .8s ease;
+    /* background-color: #fff; */
 }
 
 .icons a {
@@ -186,7 +187,6 @@ div.btn a:hover {
     text-decoration: none;
     justify-self: center;
     align-self: center;
-    /* margin: 0 15px; */
 }
 
 .icons a .layer {
@@ -408,7 +408,7 @@ div.btn a:hover {
 
 /* for tablet 300px to*/
 
-@media (min-width: 650px) {
+/* @media (min-width: 600px) {
     header nav a.logo {
         font-size: 20px;
     }
@@ -420,9 +420,9 @@ div.btn a:hover {
     main div {
         padding: 0 15px;
     }
-}
+} */
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
 
     main div {
         font-size: 10px;
@@ -456,7 +456,7 @@ div.btn a:hover {
     div.btn a {
         width: 150px;
         height: 20px;
-        font-size: 15px;
+        font-size: 10px;
     }
 }
 
