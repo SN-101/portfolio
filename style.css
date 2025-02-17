@@ -31,7 +31,7 @@ body::after {
 
 header {
     width: 90%;
-    height: 90%;
+    height: 95%;
     background-color: #ffffff3c;
     border-radius: 40px;
 }
@@ -77,7 +77,7 @@ nav ul li {
     transition: all .5s ease;
 }
 
-nav ul li a.active{
+nav ul li a.active {
     color: gray;
     background-color: #fff;
     border-radius: 20px;
@@ -114,7 +114,7 @@ main img {
 }
 
 main div {
-    font-size: 10px;
+    font-size: 15px;
     margin: 10px;
     padding-bottom: 10px;
     align-items: center;
@@ -173,6 +173,7 @@ div.btn a:hover {
     align-content: start;
     width: 80%;
     height: fit-content;
+    transition: all .8s ease;
 }
 
 .icons a {
@@ -322,9 +323,9 @@ div.btn a:hover {
 .icons a:hover #insta_i,
 .icons a:hover #fb_i,
 .icons a:hover #what_i,
-.icons a:hover #tele_i{
+.icons a:hover #tele_i {
     background-color: #fff;
-    
+
 }
 
 /*div.icons {
@@ -417,29 +418,45 @@ div.btn a:hover {
     }
 
     main div {
-        font-size: 15px;
         padding: 0 15px;
     }
 }
 
 @media (max-width: 650px) {
+
+    main div {
+        font-size: 10px;
+        padding: 0 15px;
+    }
+
+    header nav a.logo,
+    header nav ul li a {
+        font-size: 15px;
+        padding: 0 1px;
+    }
+
+    /* div.icons {
+        height: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    } */
+
     div.icons a {
         width: 40px;
         height: 40px;
-        margin: 0 auto;
-        /* top: -20px; */
+        margin: 15px auto;
     }
 
     .icons a .layer span.fab {
         font-size: 20px;
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
     }
 
     div.btn a {
-        width: 100px;
+        width: 150px;
         height: 20px;
-        font-size: 10px;
+        font-size: 15px;
     }
 }
 
