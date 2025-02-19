@@ -1,10 +1,7 @@
-/* for phones 300px */
-
 * {
     margin: 0;
     padding: 0;
 }
-
 body {
     width: 100%;
     height: 100vh;
@@ -13,10 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #000;
-
-
 }
-
 body::after {
     content: '';
     width: 100%;
@@ -26,23 +20,19 @@ body::after {
     z-index: -1;
     clip-path: circle(52% at left 20%);
     transition: all .5s ease;
-
 }
-
 header {
     width: 90%;
     height: 95%;
     background-color: #ffffff3c;
     border-radius: 40px;
 }
-
 header nav {
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 nav a.logo {
     color: #fff;
     text-decoration: none;
@@ -52,23 +42,10 @@ nav a.logo {
     letter-spacing: 2px;
     text-align: center;
     transition: all .5s ease;
-
 }
-
 nav a.logo:hover {
-    text-shadow: -4px -4px #000000;
+    text-shadow: -6px -6px #000;
 }
-
-/* nav a.logo:hover::after{
-    content: 'samir nassiri';
-    text-shadow: 0px 0px #fff,
-    0px 0px #fff,
-    0px 0px #fff,
-    0px 0px #fff;
-    padding: 5px;
-} */
-
-
 nav ul li {
     display: inline-block;
     margin: 0 10px;
@@ -76,13 +53,11 @@ nav ul li {
     text-align: center;
     transition: all .5s ease;
 }
-
 nav ul li a.active {
     color: gray;
     background-color: #fff;
     border-radius: 20px;
 }
-
 nav ul li a {
     color: #fff;
     margin: auto;
@@ -91,28 +66,25 @@ nav ul li a {
     text-transform: capitalize;
     transition: all .5s ease;
 }
-
 nav ul li a:hover {
     color: #000;
     border: 2px #fff1 solid;
     border-radius: 10px;
     background-color: #fff5;
 }
-
 header main {
     height: 80%;
 }
-
 main img {
-    width: 100px;
-    height: 150px;
+    width: 150px;
+    height: 170px;
     margin: 10px auto;
     order: 1;
     display: block;
     border: 2px blue solid;
     transition: all .5s ease;
+    pointer-events: none;
 }
-
 main div {
     font-size: 15px;
     margin: 10px;
@@ -121,27 +93,24 @@ main div {
     align-content: center;
     transition: all .5s ease;
 }
-
 main div h2 {
     text-transform: uppercase;
     padding: 10px 0;
     text-align: center;
     color: #000;
+    pointer-events: none;
 }
-
 main div p {
     padding: 10px 0;
     text-align: center;
     color: #fff;
     line-height: 20px;
+    pointer-events: none;
 }
-
 div.btn {
     margin: 0 10px;
     transition: all .5s ease;
 }
-
-
 div.btn a {
     text-decoration: none;
     color: #fff;
@@ -157,15 +126,12 @@ div.btn a {
     font-weight: 800;
     transition: all .8s ease;
 }
-
-
 div.btn a:hover {
     border: 1px black solid;
     background-color: transparent;
     color: #000;
     background-color: #fff;
 }
-
 .icons {
     display: flex;
     margin: 0 auto;
@@ -174,21 +140,17 @@ div.btn a:hover {
     width: 80%;
     height: fit-content;
     transition: all .8s ease;
-    /* background-color: #fff; */
 }
-
 .icons a {
     display: inline-block;
     margin: auto;
     width: 55px;
     height: 55px;
     position: relative;
-    /* top: -20px; */
     text-decoration: none;
     justify-self: center;
     align-self: center;
 }
-
 .icons a .layer {
     justify-self: center;
     align-self: center;
@@ -200,11 +162,9 @@ div.btn a:hover {
     transform: rotate(0deg);
     transform-origin: bottom;
 }
-
 .icons a:hover .layer {
     transform: rotate(-10deg) skew(30deg);
 }
-
 .icons div.text {
     height: 50%;
     font-size: 10px;
@@ -214,11 +174,9 @@ div.btn a:hover {
     opacity: 0;
     margin: 0 auto;
 }
-
 .icons a:hover div.text {
     opacity: 1;
 }
-
 .icons a .layer span {
     position: absolute;
     width: 60%;
@@ -227,26 +185,21 @@ div.btn a:hover {
     border-radius: 10px;
     transition: all .8s;
 }
-
 .icons a:hover .layer span:nth-child(1) {
     opacity: 0.2;
 }
-
 .icons a:hover .layer span:nth-child(2) {
     opacity: 0.4;
     transform: translate(5px, -5px);
 }
-
 .icons a:hover .layer span:nth-child(3) {
     opacity: 0.6;
     transform: translate(10px, -10px);
 }
-
 .icons a:hover .layer span:nth-child(4) {
     opacity: 0.8;
     transform: translate(15px, -15px);
 }
-
 .icons a .layer span.fab {
     display: flex;
     width: 50px;
@@ -257,13 +210,6 @@ div.btn a:hover {
     align-items: center;
     color: #000;
 }
-
-/* span{
-    color: #d4af37;
-    border-color: #d4af37;
-    background-color: #d4af37;
-} */
-
 #link,
 #git,
 #insta,
@@ -279,13 +225,11 @@ div.btn a:hover {
     color: #d4af37;
     border-color: #d4af37;
 }
-
 .icons a:hover #link,
 .icons a:hover #link_i {
     color: blue;
     border-color: blue;
 }
-
 .icons a:hover #git,
 .icons a:hover #git_i {
     color: black;
@@ -296,28 +240,22 @@ div.btn a:hover {
 .icons a:hover #insta_i {
     color: #dd2a7b;
     border-color: #dd2a7b;
-
 }
-
 .icons a:hover #fb,
 .icons a:hover #fb_i {
     color: blue;
     border-color: blue;
-
 }
-
 .icons a:hover #what,
 .icons a:hover #what_i {
     color: green;
     border-color: green;
 }
-
 .icons a:hover #tele,
 .icons a:hover #tele_i {
     color: blue;
     border-color: blue;
 }
-
 .icons a:hover #link_i,
 .icons a:hover #git_i,
 .icons a:hover #insta_i,
@@ -325,102 +263,7 @@ div.btn a:hover {
 .icons a:hover #what_i,
 .icons a:hover #tele_i {
     background-color: #fff;
-
 }
-
-/*div.icons {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.icons a {
-    width: 50px;
-    margin: 0 2px;
-    transition: all .7s ease;
-}
-
-.icons a:hover {
-    width: 120px;
-    transition: all .7s ease;
-}
-
-.icons a#fb:hover{
-    background-color: rgb(0, 0, 188);
-}
-.icons a#insta:hover{
-    background: linear-gradient(to bottom left, #515bd4, #8134af, #dd2a7b, #feda77, #f58529);
-}
-.icons a#twit:hover{
-    background-color: rgb(28, 28, 32);
-}
-.icons a#git:hover{
-    background-color: #3a3636;
-}
-.icons a#link:hover{
-    background-color: #3636f8;
-}
-.icons a#what:hover{
-    background-color: green;
-}
-
-.icons a#fb:hover i::after{
-    content: 'Facebook';
-    font-size: 13px;
-    padding: 0 5px;
-    color: #fff;
-}
-.icons a#insta:hover i::after{
-    content: 'instagram';
-    font-size: 13px;
-    padding: 0 5px;
-    color: #fff;
-}
-.icons a#twit:hover i::after{
-    content: 'X:Twitter';
-    font-size: 13px;
-    padding: 0 5px;
-    color: #fff;
-}
-.icons a#git:hover i::after{
-    content: 'Github';
-    font-size: 13px;
-    padding: 0 5px;
-    color: #fff;
-}
-.icons a#link:hover i::after{
-    content: 'Linkedin';
-    font-size: 13px;
-    padding: 0 5px;
-    color: #fff;
-}
-.icons a#what:hover i::after{
-    content: 'Whatsapp';
-    font-size: 13px;
-    padding: 0 5px;
-    color: #fff;
-}
-
-.icon a:hover::after {
-    content: 'hello';
-    font-size: 20px;
-} */
-
-/* for tablet 300px to*/
-
-/* @media (min-width: 600px) {
-    header nav a.logo {
-        font-size: 20px;
-    }
-
-    header nav ul li a {
-        font-size: 15px;
-    }
-
-    main div {
-        padding: 0 15px;
-    }
-} */
 
 @media (max-width: 600px) {
 
@@ -434,67 +277,39 @@ div.btn a:hover {
         font-size: 15px;
         padding: 0 1px;
     }
-
-    /* div.icons {
-        height: 100px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    } */
-
     div.icons a {
         width: 40px;
         height: 40px;
         margin: 15px auto;
     }
-
     .icons a .layer span.fab {
         font-size: 20px;
-        width: 25px;
-        height: 25px;
+        width: 35px;
+        height: 35px;
     }
-
     div.btn a {
         width: 150px;
         height: 20px;
         font-size: 10px;
     }
 }
-
 @media (min-width: 700px) {
-    /* nav a.logo:hover::after {
-        content: 'samir nassiri';
-        text-shadow: 0px 0px #fff,
-            0px 0px #fff,
-            0px 0px #fff,
-            0px 0px #fff;
-        padding: 5px;
-    } */
-
     header nav ul li a {
         font-size: 20px;
     }
-
-    /* nav a.logo:hover {
-        text-shadow: none;
-    } */
-
     header nav a.logo {
         font-size: 25px;
     }
-
     body::after {
         clip-path: circle(46% at top);
     }
-
     main img {
-        width: 120px;
+        width: 150px;
         height: 180px;
     }
 }
-
 @media(min-width:720px) {
     body::after {
         clip-path: circle(430px at top);
     }
-
 }
